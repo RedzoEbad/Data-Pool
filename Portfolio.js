@@ -129,6 +129,7 @@ document.querySelector(".contact-form").addEventListener("submit", async (e) => 
       // Immediately reset form and button for instant UI feedback
       e.target.reset();
       resetFormButton(e.target);
+      alert('Data sent!');
     } catch (error) {
       alert("Error: " + error.message);
       resetFormButton(e.target);
